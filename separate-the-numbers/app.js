@@ -5,17 +5,17 @@ function separateNumbers(s) {
     let str = startString;
 
     while (str.length < s.length) {
-      number = number + 1n; // Increment as a BigInt
-      str += number.toString(); // Convert BigInt to string and append
+      number = number + 1n;
+      str += number.toString();
     }
 
     if (str === s) {
       console.log("YES " + startString);
-      return; // Exit the function once a beautiful sequence is found
+      return; 
     }
   }
 
-  // If no beautiful sequence is found, print "NO"
+
   console.log("NO");
 }
 
